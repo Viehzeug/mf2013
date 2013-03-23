@@ -1,0 +1,514 @@
+/*****************\
+|*   CSS Reset   *|
+\*****************/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}   
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*****************\
+|*   Structure   *|
+\*****************/
+
+/* sticky footer */
+html, body
+{
+  height: 100%;
+  max-width: 100%;
+}
+
+#wrapper
+{
+  min-height: 100%;
+  position: relative;
+}
+
+#main
+{
+  padding-bottom: 2.5em;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0px auto;
+}
+
+/* structure */
+
+header
+{
+  -webkit-box-shadow: 0 5px 10px #aaa;
+  -moz-box-shadow: 0 5px 10px #aaa;
+  box-shadow: 0 5px 10px #aaa;
+}
+
+footer
+{
+  /* some more hacks for the sticky footer */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2.5em;
+  -webkit-box-shadow: 0 -5px 10px #aaa;
+  -moz-box-shadow: 0 -5px 10px #aaa;
+  box-shadow: 0 -5px 10px #aaa;
+}
+
+header,
+footer{
+ padding: 10px 50px;
+ background-color: #E5E5E5;
+ width:100%;
+ overflow:hidden; 
+}
+
+header > div,
+footer > div
+{
+  float: left;
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+  height: inherit;
+}
+
+/**************\
+|*   Styles   *|
+\**************/
+
+/* general styles */
+
+body{
+  background-image: url(../img/bg.png);
+  background-color: #FAFAFA;
+  font-size: 24px;
+  font-family: 'Noticia Text', serif;
+  line-height: 1.6;
+}
+
+pre
+{
+  font-size: .8em;
+  font-family: monospace;
+  background: #E5E5E5;
+  height: auto;
+  margin: 1.5em 0em;
+  padding: .5em;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+em{
+  font-style:italic;
+}
+
+
+ol, ul
+{
+  padding-left: 1.5em;
+}
+
+ol{
+  list-style: decimal inside;
+}
+
+ul
+{
+  list-style: none;
+}
+
+ul li:before {
+  content: "\0BB\020";
+}
+
+a {
+  color: #FF8E2B;
+  text-decoration: none;
+  border-bottom: solid .09em #FF8E2B;
+}
+
+a:visited {
+  color: #C59C78;
+  border-bottom: solid .09em #C59C78;
+}
+
+a.read-more {
+  text-align: right;
+}
+
+hr
+{
+  background:#E5E5E5;
+  height:3px;
+  width: 60%;
+  margin: 2em auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+ font-family: 'Arimo', sans-serif;
+ font-variant: small-caps;
+ font-weight: 700;
+ margin: .8em 0em;
+}
+
+h1{
+ font-size: 2em;
+}
+
+h2{
+ font-size: 1.8em;
+}
+
+h3{
+ font-size: 1.6em;
+}
+
+h4{
+ font-size: 1.4em;
+}
+
+h5{
+ font-size: 1.2em;
+}
+
+h6{
+ font-size: 1em;
+}
+
+h1 a, h1 a:visited,
+h2 a, h2 a:visited,
+h3 a, h3 a:visited,
+h4 a, h4 a:visited,
+h5 a, h5 a:visited,
+h6 a, h6 a:visited,
+#home a, #home a:visited{
+  color: inherit;
+  text-decoration: inherit;
+  border: none;
+}
+
+p {
+ margin: .8em 0em;
+}
+
+q:before {
+  content: "“";
+}
+
+q:after {
+  content: "”";
+}
+
+q{
+ font-style: italic;
+ color: #7a7a7a;
+} 
+
+::selection {
+  background:#9B9B9B;
+  color:#000; /* Safari and Opera */
+}
+
+::-moz-selection {
+  background:#9B9B9B;
+  color:#000; /* Firefox */
+}
+
+blockquote{
+ padding: .3em;
+ font-size: .9em;
+ font-style: italic;
+ color: #7a7a7a;
+ margin: .8em 0em;
+ padding: 0.25em 55px;
+ position: relative;
+}
+
+blockquote:before{
+  display: block;
+  content: "\201C";
+  font-size: 5em;
+  position: absolute;
+  left: -15px;
+  top: -25px;
+  color: #7a7a7a;
+}
+
+blockquote cite {
+  color: #7a7a7a;
+  font-size: .6em;
+  display: block;
+  margin-top: .25em;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+.spacer{
+  float: none;  
+  clear: both;
+}
+
+.alignleft
+{
+  text-align: left;
+}
+
+.alignright
+{
+  text-align: right;
+}
+
+nav
+{
+  margin: 50px auto;
+}
+
+nav > div 
+{
+  float: left;
+  width: 50%;
+  padding: 5px 0px;
+}
+
+/* article style */
+
+article header,
+article footer
+{
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: inherit;
+  padding: .3em 0px;
+  font-size: 1.4em;
+  margin: 30px 0px;
+  position: inherit;
+}
+
+article header h1 {
+  padding: .2em;
+  border-left: solid .25em #FF8E2B;
+}
+
+article .content{
+  padding-left: 50px;
+}
+
+article footer {
+  text-align: right;
+  font-size: 1em;
+  height: auto;
+}
+
+/* header style */
+
+header a
+{
+ color: auto;
+ text-decoration: none;
+ height: auto;
+ width: auto; 
+}
+
+header h1,
+header h2
+{
+ line-height: 1;
+ width:auto;
+ display: inline-block;
+ padding: 0px;
+ margin: 0px;
+ border: none;
+}
+
+header h2
+{
+ font-size: .8em;
+ color: #7a7a7a;
+ display: inline-block;
+}
+
+#avatar { 
+ box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.5) inset, 0 1px 1px 1px rgba(0, 0, 0, 0.5);
+ -moz-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.5) inset, 0 1px 1px 1px rgba(0, 0, 0, 0.5);
+ -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.5) inset, 0 1px 1px 1px rgba(0, 0, 0, 0.5);
+ margin: 0px 0px 0px auto;
+ border: .2em solid #E6E6E6;
+ -webkit-border-radius: 4em;
+ -moz-border-radius: 4em;
+ border-radius: 4em;
+ width: 4em;
+ height: 4em;
+ background-repeat: no-repeat;
+ background-size: contain;
+}
+
+#home
+{
+  width: 75%;
+}
+
+#avatar-wrapper
+{
+  width: 25%;
+}
+
+/* footer style */
+
+#search-wrapper{
+  text-align: right;
+}
+
+#searchform #s{
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ border-radius: 3px;
+ padding: 0px 10px; 
+}
+
+#contact li:before,
+#contact li:after
+{
+  content: "";
+  content: none;    
+}
+
+#contact a
+{
+  text-decoration: none;
+  color: #7a7a7a;
+  border: none;
+}
+
+#contact
+{
+  padding: 0;
+  list-style: none;
+}
+
+#contact li {
+  width: 1.5em;
+  margin: 0px;
+  padding: 0 .3em;
+  float: left;
+}
+
+#contact #adn{
+  font-size: 1.5em;
+  margin-top: -.4em;
+  margin-left: -.1em;
+}
+
+
+/*************************\
+|*   Responsive Styles   *|
+\*************************/
+
+@media only screen and (max-width : 500px) {
+  body{
+    font-size: 16px;        
+  }
+}
+
+@media only screen and (max-width : 800px) and (min-width : 501px) {
+  body{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width : 1180px) and (min-width : 801px) {
+  body{
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width : 1181px) {
+  body{
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width : 800px)
+{
+
+  #main
+  {
+    padding-bottom: 6em;
+  }
+
+  footer
+  {
+    height: 5em;
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  footer > div
+  {
+    width: 100%;
+    height: 40%;
+  }
+
+  #search-wrapper
+  {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  #s
+  {
+    width: 85%;
+  }
+
+  #contact li
+  {
+    float: none;
+    display: inline-block;
+    padding: 0 1em;
+  }
+
+  #contact
+  {
+    text-align: center;
+  }
+
+}
+

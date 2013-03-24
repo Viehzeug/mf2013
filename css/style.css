@@ -133,6 +133,10 @@ em{
   font-style:italic;
 }
 
+strong
+{
+  font-weight: bold;
+}
 
 ol, ul
 {
@@ -150,6 +154,10 @@ ul
 
 ul li:before {
   content: "\0BB\020";
+}
+
+li{
+  padding-bottom: 1em;
 }
 
 a {

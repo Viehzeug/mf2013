@@ -56,7 +56,7 @@ html, body
 
 #main
 {
-  padding-bottom: 2.5em;
+  padding-bottom: 3.5em;
   max-width: 1000px;
   width: 90%;
   margin: 0px auto;
@@ -479,7 +479,7 @@ header h2
 
   #main
   {
-    padding-bottom: 6em;
+    padding-bottom: 10em;
   }
 
   footer
